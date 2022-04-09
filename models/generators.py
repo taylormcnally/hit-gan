@@ -53,7 +53,7 @@ def unblock_images(inputs: tf.Tensor, grid_size: int,
 
 
 class Block(tf.keras.layers.Layer):
-  """Aattention block."""
+  """Attention block."""
 
   def __init__(self,
                attn_axes: List[List[int]],
