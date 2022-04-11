@@ -25,6 +25,7 @@ Reference:
 
 import tensorflow as tf
 
+#TODO: fix augmentation for 3d data
 
 def augment(x, policy='', channels_first=False):
   if policy:

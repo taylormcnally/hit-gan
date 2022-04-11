@@ -51,7 +51,6 @@ def unblock_images(inputs: tf.Tensor, grid_size: int,
   # outputs: (batch_size, height, width, channels)
   return outputs
 
-
 class Block(tf.keras.layers.Layer):
   """Attention block."""
 
@@ -146,7 +145,7 @@ class HiTGenerator(tf.keras.Model):
 
   def __init__(self,
                output_size: int,
-               output_dim: int = 3,
+               output_dim: int, #our custom channel dim
                attn_type: Text = "multi_query",
                norm_type: Text = "batch",
                activation: Callable[..., tf.Tensor] = tf.nn.gelu,
